@@ -3,8 +3,8 @@
 import type React from "react"
 import { useState } from "react"
 import { Helmet } from "react-helmet-async"
-import { useAppContext } from "../context/AppContext"
-import type { TransactionType } from "../types"
+import { useAppContext } from "../../context/AppContext"
+import type { TransactionType } from "../../types"
 import styles from "./Categories.module.css"
 
 const getRandomColor = () => {
