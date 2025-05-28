@@ -1,0 +1,134 @@
+.addTransaction {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.addTransaction h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+  text-align: center;
+}
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.typeSelector {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.typeButton {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #f7fafc;
+  color: #4a5568;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.typeButton:hover {
+  background: #edf2f7;
+}
+
+.incomeActive {
+  background: #48bb78 !important;
+  color: white !important;
+}
+
+.expenseActive {
+  background: #f56565 !important;
+  color: white !important;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.inputError {
+  border-color: #e53e3e;
+}
+
+.inputError:focus {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+.errorText {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submitButton {
+  width: 100%;
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.875rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #2c5aa0;
+}
+
+.submitButton:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .addTransaction {
+    padding: 0.5rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+}

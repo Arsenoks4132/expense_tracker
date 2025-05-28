@@ -1,0 +1,282 @@
+.profile {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.userProfileCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.profileHeader {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.profilePhotoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profilePhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+}
+
+.photoInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 200px;
+}
+
+.photoInput label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileInfo h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.profession {
+  color: #3182ce;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.birthDate {
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.editProfileButton {
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.editProfileButton:hover {
+  background: #2c5aa0;
+}
+
+.profileForm {
+  width: 100%;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.formActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.saveButton {
+  background: #48bb78;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.saveButton:hover {
+  background: #38a169;
+}
+
+.cancelButton {
+  background: #e2e8f0;
+  color: #4a5568;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancelButton:hover {
+  background: #cbd5e0;
+}
+
+.statsCard,
+.actionsCard,
+.aboutCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.statsCard h3,
+.actionsCard h3,
+.aboutCard h3 {
+  margin-bottom: 1rem;
+  color: #1a202c;
+  font-size: 1.125rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 6px;
+}
+
+.statLabel {
+  display: block;
+  color: #718096;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.statValue {
+  display: block;
+  color: #1a202c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.exportButton,
+.clearButton,
+.logoutButton {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.exportButton {
+  background: #3182ce;
+  color: white;
+}
+
+.exportButton:hover {
+  background: #2c5aa0;
+}
+
+.clearButton {
+  background: #f56565;
+  color: white;
+}
+
+.clearButton:hover {
+  background: #e53e3e;
+}
+
+.logoutButton {
+  background: #718096;
+  color: white;
+}
+
+.logoutButton:hover {
+  background: #4a5568;
+}
+
+.aboutCard p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.version {
+  color: #718096;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .profileHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .actionButtons {
+    gap: 0.5rem;
+  }
+}
