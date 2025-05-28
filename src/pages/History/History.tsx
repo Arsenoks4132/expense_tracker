@@ -3,9 +3,9 @@
 import type React from "react"
 import { useState } from "react"
 import { Helmet } from "react-helmet-async"
-import { useAppContext } from "../context/AppContext"
-import { formatCurrency, formatDate } from "../utils/calculations"
-import type { Transaction } from "../types"
+import { useAppContext } from "@/context/AppContext"
+import { formatCurrency, formatDate } from "@/utils/calculations"
+import type { Transaction } from "types"
 import styles from "./History.module.css"
 
 type SortOption = "date-desc" | "date-asc" | "amount-desc" | "amount-asc" | "category-asc" | "category-desc"

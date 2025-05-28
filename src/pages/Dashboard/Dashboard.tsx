@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import { Helmet } from "react-helmet-async"
-import { useAppContext } from "../context/AppContext"
-import { calculateBalance, calculateTotalIncome, calculateTotalExpense, formatCurrency } from "../utils/calculations"
-import type { ChartView } from "../types"
+import { useAppContext } from "@/context/AppContext"
+import { calculateBalance, calculateTotalIncome, calculateTotalExpense, formatCurrency } from "@/utils/calculations"
+import type { ChartView } from "types"
 import styles from "./Dashboard.module.css"
 
 export default function Dashboard() {
