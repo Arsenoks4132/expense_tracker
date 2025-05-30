@@ -81,12 +81,6 @@ export default function Login() {
           <p className={styles.authLink}>
             Нет аккаунта? <Link to="/register">Зарегистрироваться</Link>
           </p>
-
-          <div className={styles.demoCredentials}>
-            <p>Демо-доступ:</p>
-            <p>Email: demo@example.com</p>
-            <p>Пароль: password123</p>
-          </div>
         </div>
       </div>
     </>
